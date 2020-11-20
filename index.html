@@ -10,18 +10,20 @@
 
 <body>
 
-      <h1>This is the top-level heading.</h1>
-   </section>
-   <h2>This is a subheading.</h2>
-   <h3>this is my change</h3>
-   <p>This is some plain old paragraph text.</p>
-   <p>
-      Please visit
-      <a href="https://codepen.io/tkjn/project/editor/XakPQB#" target="_blank">this Codepen project</a>
-      for an example of how this will look in a file structure in your text
-      editor, including an example of a link between HTML documents (pages) in
-      the same website project.
-   </p>
+      <h1>This is a formspree.io form</h1>
+ 
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylbzqq" method="post">
+         <fieldset id="fs-frm-inputs">
+           <label for="full-name">Full Name</label>
+           <input type="text" name="name" id="full-name" placeholder="Michael Bubbly" required="">
+           <label for="email-address">Email Address</label>
+           <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+           <label for="message">Message</label>
+           <textarea rows="5" name="message" id="message" placeholder="What's the fizz?" required=""></textarea>
+           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+         </fieldset>
+         <input type="submit" value="Submit">
+       </form>
 </body>
 
 </html>
